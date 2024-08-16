@@ -1,3 +1,7 @@
-def call() {
-    println"Hi"
+def call(String name = "Alice") {
+    script {
+        sh """
+            echo Hi ${name}
+        """
+    }
 }
