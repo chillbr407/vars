@@ -1,3 +1,7 @@
-def call(String msg) {
-    echo "Custom Message: ${msg}"
+def call(String name = "Alice") {
+    script {
+        sh """
+            echo Hi ${name}
+        """
+    }
 }
